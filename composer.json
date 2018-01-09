@@ -6,6 +6,7 @@
     }
   ],
   "require": {
+    "ext-phalcon": "~3.1",
     "evgwed/ethereum-php": "v1.1"
   }
 }
