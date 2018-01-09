@@ -7,7 +7,12 @@ class IndexController extends ControllerBase
 
     public function indexAction()
     {
-        $client = new EthereumClient('http://192.168.100.1:8545');
+        $connectionUri = sprintf(
+            '%s:%s',
+            $this->config->ethereum->host,
+            $this->config->ethereum->port
+        );
+        $client = new EthereumClient($connectionUri);
 
         $accounts = [];
         foreach ($client->eth()->accounts() as $account) {
