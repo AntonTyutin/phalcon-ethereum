@@ -1,0 +1,11 @@
+{
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:evgwed/ethereum-php.git"
+    }
+  ],
+  "require": {
+    "evgwed/ethereum-php": "v1.1"
+  }
+}
